@@ -1,0 +1,28 @@
+.linkto{
+    width: 80%;
+    height: 10vh;
+    margin: 0;
+    background-color: black;
+    display: flex;
+    border-radius: 5rem;
+}
+
+.linkto-link{
+    text-decoration: none;
+}
+
+.linkto-img{
+    width: 10vh;
+    float: left;
+    border-top-left-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+}
+
+.linkto-content{
+    width: 80%;
+    height: 10vh;
+    color: white;
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}

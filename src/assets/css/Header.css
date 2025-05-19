@@ -1,0 +1,22 @@
+.header{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    color: white;
+    align-content: center;
+    padding-left: 1vh;
+    padding-right: 1vh;
+}
+
+.titulo{
+    font-size: x-large;
+    color: white;
+    text-decoration: none;
+}
+
+.logo-menu{
+    width: 30px;
+    float: left;
+}
