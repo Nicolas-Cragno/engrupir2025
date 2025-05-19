@@ -8,11 +8,10 @@ export default function Home() {
     <div className="home">
       <div className="presentation"></div>
       <div className="soundcloud-section">
-        <h3>Entrevista</h3>
+        <h2>Entrevista</h2>
         <Linkto 
         link="https://soundcloud.com/brii-martinez/vertigo-entrevista?ref=clipboard&p=a&c=1&si=c6878d736a664abda1119002e352f8e1&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
-        title="Diego Lugano, dueño de Vértigo."
-        txt="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaRepasamos aspectos determinantes en la historia de la movida under y nos compartió su visión sobrel a escena actual."
+        title="Charlamos con Diego Lugano, dueño de Vértigo."
         img={LogoSoundcloud}
         />
       </div>
