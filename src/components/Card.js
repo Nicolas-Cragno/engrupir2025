@@ -6,9 +6,9 @@ export default function Card(props) {
   const cardStyle = {
     backgroundImage: `url(${img})`,
     backgroundSize: 'cover',
-  };
+  }
   return (
-      <Link to="/" className="link">
+      <Link to={link} className="link">
         <div className='card' style={cardStyle}>
             <div className="card-content">
               <h2>{title}</h2>

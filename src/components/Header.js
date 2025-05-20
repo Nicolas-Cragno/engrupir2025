@@ -9,6 +9,12 @@ export default function Header() {
       <div className='header'>
         <img src={LogoMenu} className="logo-menu" alt=''></img>
         <Link to='/' className='titulo'>Engrupir</Link>
+        <ul className='header-menu'>
+          <li className='header-option'>Acid Groove</li>
+          <li className='header-option'>Vanguart</li>
+          <li className='header-option'>On my feet</li>
+          <li className='header-option'>Contacto</li>
+        </ul>
       </div>
     </>
   )

@@ -6,6 +6,7 @@ import AcidGrooveImg2 from "../assets/images/acidhouse.jpg";
 import VanguartImg1 from "../assets/images/ophelia.jpg";
 import VanguartImg2 from "../assets/images/toto.jpg";
 import Card from "../components/Card";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -47,6 +48,7 @@ export default function Home() {
           link='/'
           ></Card>
       </div>
+      <Footer></Footer>
     </div>
   )
 }
