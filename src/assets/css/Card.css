@@ -1,0 +1,23 @@
+.card{
+    width: 80vh;
+    height: 50vh;
+    display: flex;
+    align-items: last baseline;
+    background-position: center;
+    margin: 2vh;
+}
+
+.card-content{
+    background-color: black;
+    width: 80vh;
+    height: 20vh;
+    color: white;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.card:hover{
+    .card-content{
+        opacity: 0.9;
+    }
+}
