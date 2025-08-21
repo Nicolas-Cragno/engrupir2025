@@ -1,0 +1,108 @@
+.item-new {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.item-new-img {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* relación 16:9 */
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.item-new-img:hover {
+  transform: scale(1.03);
+}
+
+.item-new-text {
+  position: absolute;
+  justify-items: left;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* fondo semitransparente */
+  color: #fff;
+  padding: 0.8rem 1rem;
+  box-sizing: border-box;
+}
+
+.item-new-text h1, h4 {
+  margin: 0;
+  font-weight: bold;
+  color:#fff;
+}
+
+.item-new-text h5 {
+    color: #bdb8b8;
+    margin: 0;
+}
+
+.item-new-text p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #bdb8b8;
+}
+
+.item-new-text-header, .item-new-text-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.open-btn{
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.open-btn:hover {
+  background-color: #d6030d;
+  color: #222;
+  transition: 0.8s;
+}
+
+.view-on {
+  position: absolute;
+  justify-items: left;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* fondo semitransparente */
+  color: #fff;
+  padding: 0.8rem 1rem;
+  box-sizing: border-box;
+  transition: opacity 0.4s;
+  z-index: 2; 
+}
+
+/* Vista hover */
+.view-off {
+  position: absolute;
+  justify-items: left;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5); 
+  color: #fff;
+  padding: 0.8rem 1rem;
+  box-sizing: border-box;
+  opacity: 0; 
+  transition: opacity 0.3s;
+  z-index: 3; 
+}
+
+.item-new:hover .view-on {
+  opacity: 0;
+}
+
+.item-new:hover .view-off {
+  opacity: 1;
+}

@@ -1,11 +1,11 @@
-import "../assets/css/Home.css";
-import Linkto from "../components/Linkto";
+import "./css/Home.css";
+import Linkto from "../components/elements/Linkto";
 import LogoSoundcloud from "../assets/logos/soundCloudOrange.avif";
 import AcidGrooveImg1 from "../assets/images/carajo.jpg";
 import AcidGrooveImg2 from "../assets/images/acidhouse.jpg";
 import VanguartImg1 from "../assets/images/ophelia.jpg";
 import VanguartImg2 from "../assets/images/toto.jpg";
-import Card from "../components/Card";
+import Card from "../components/cards/Card";
 import Footer from "../components/Footer";
 
 export default function Home() {

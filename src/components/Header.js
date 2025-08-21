@@ -1,21 +1,39 @@
-import React from 'react';
-import "../assets/css/Header.css";
+import { useEffect, useState } from "react";
+import "./css/Header.css";
 import { Link } from 'react-router-dom';
 import LogoMenu from "../assets/logos/menu.svg";
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  }
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if(menuOpen) {
+        setMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [menuOpen])
+
   return (
-    <>
-      <div className='header'>
-        <img src={LogoMenu} className="logo-menu" alt=''></img>
-        <Link to='/' className='titulo'>Engrupir</Link>
-        <ul className='header-menu'>
-          <li className='header-option'>Acid Groove</li>
-          <li className='header-option'>Vanguart</li>
-          <li className='header-option'>On my feet</li>
-          <li className='header-option'>Contacto</li>
-        </ul>
-      </div>
-    </>
+    <div className='header'>
+      <img src={LogoMenu} className={`logo-menu ${menuOpen ? 'logo-open' : ''}`} alt='Menu' onClick={toggleMenu} />
+      <Link to='/' className='header-logo'>Engrupir</Link>
+      <ul className={`header-menu-desplegable ${menuOpen ? 'open' : ''}`}>
+        <li className='header-option'>Acid Groove</li>
+        <li className='header-option'>Vanguart</li>
+        <li className='header-option'>On my feet</li>
+        <li className='header-option'>Contacto</li>
+      </ul>
+    </div>
   )
 }

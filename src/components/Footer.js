@@ -1,4 +1,4 @@
-import "../assets/css/Footer.css";
+import "./css/Footer.css";
 import Logo from "../assets/logos/EngrupirLogo.png";
 import LogoInstagram from "../assets/logos/LogoInstagram.png";
 import LogoSoundcloud from "../assets/logos/LogoSoundCloud.png";
