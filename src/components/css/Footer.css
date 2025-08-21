@@ -1,4 +1,6 @@
 .footer{
+    display: flex;
+    justify-content: center;
     background-color: black;
     width: 100%;
     color: white;
@@ -6,6 +8,7 @@
 
 .logo-footer{
     width: 40vh;
+    filter: invert(1)
 }
 
 .red-footer{
