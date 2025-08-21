@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./css/Header.css";
 import { Link } from 'react-router-dom';
-import LogoMenu from "../assets/logos/menu.svg";
+import LogoMenu from "../assets/logos/e-logo.png";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,7 +27,7 @@ export default function Header() {
   return (
     <div className='header'>
       <img src={LogoMenu} className={`logo-menu ${menuOpen ? 'logo-open' : ''}`} alt='Menu' onClick={toggleMenu} />
-      <Link to='/' className='header-logo'>Engrupir</Link>
+      <Link to='/' className='header-logo'>engrupir</Link>
       <ul className={`header-menu-desplegable ${menuOpen ? 'open' : ''}`}>
         <li className='header-option'>Acid Groove</li>
         <li className='header-option'>Vanguart</li>

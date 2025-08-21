@@ -1,5 +1,5 @@
 import "./css/Footer.css";
-import Logo from "../assets/logos/EngrupirLogo.png";
+import Logo from "../assets/logos/engrupir-r.png";
 import LogoInstagram from "../assets/logos/LogoInstagram.png";
 import LogoSoundcloud from "../assets/logos/LogoSoundCloud.png";
 

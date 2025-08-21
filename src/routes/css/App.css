@@ -1,5 +1,22 @@
-.App {
-  font-family: "Roboto Slab", serif;
+*{
+  scrollbar-width:thin;
+  scrollbar-color: #000 transparent;
+  overflow-x: hidden;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;              /* ancho del scrollbar */
+}
+
+
+*::-webkit-scrollbar-track {
+  background: transparent; /* fondo transparente */
+}
+
+
+*::-webkit-scrollbar-thumb {
+  background-color: #000;  /* barra negra */
+  border-radius: 4px;      /* bordes redondeados */
 }
 
 .link{

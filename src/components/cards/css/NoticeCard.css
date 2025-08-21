@@ -1,0 +1,48 @@
+.notice-card {
+  position: relative;
+  width: 100%;
+  max-width: 600px;        
+  margin: 20px auto;       
+}
+
+.notice-card:hover{
+    transform: translatey(-4px); 
+}
+
+.notice-img {
+  width: 97%;
+  height: auto;
+  display: block;
+}
+
+.notice-text {
+  position: relative;      
+  margin-top: -60px;       
+  margin-left: auto;        
+  transform: translateX(20px); 
+  background: rgba(0, 0, 0, 1); 
+  color: #fff;
+  padding: 20px;
+  max-width: 70%;          
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.notice-text h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.notice-text p {
+  margin: 8px 0 0;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .notice-text {
+    margin-top: 10px;
+    margin-left: 0;
+    transform: none;
+    max-width: 100%;
+  }
+}

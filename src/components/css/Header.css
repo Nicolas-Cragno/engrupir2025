@@ -3,22 +3,25 @@
   top: 0;       
   left: 0;              
   width: 100%;          
-  height: 60px;         
+  height: 70px;         
   background-color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 22px 4px rgba(0,0,0,0.1);
   z-index: 1000;     
+  box-sizing: border-box; /* evita que el padding sume al width */
+  overflow: hidden;   
 }
 .logo-menu {
   position: absolute;
   left: 20px;
-  width: 40px;
-  height: 40px;
+  width: 70px;
+  height: 70px;
   cursor: pointer;
   transition: transform 0.3s ease;
+  filter: invert(1)
 }
 
 .logo-menu.logo-open{
@@ -30,6 +33,11 @@
   font-weight: bold;
   text-decoration: none;
   color: #fff;
+}
+
+.header-logo-e{ /* solo en caso que la 'e' sea diferente al 'ngrupir'  */
+  font-size: 38px;
+  font-weight: bolder;
 }
 
 .header-menu-desplegable {
